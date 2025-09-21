@@ -113,6 +113,8 @@ button.sign1 {
 .info-image {
     width: 200px;
     flex: 1;
+    border-radius: 8px;
+    border: 1px solid #3882F6;
 }
 
 .info-text {
@@ -180,4 +182,13 @@ button.sign2 {
     border: 1px solid white;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 300px;   
+    gap: 50px;
+    text-align: center;    
 }
