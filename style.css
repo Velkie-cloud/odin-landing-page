@@ -86,7 +86,7 @@ button.sign2 {
     flex-direction: column;
     justify-content: stretch;
     align-items: center;
-    background: #eee;
+    background: whitesmoke;
     padding: 100px 300px;   
     gap: 50px;
 }
@@ -124,4 +124,28 @@ button.sign2 {
 .info-text {
     color: #1F2937;
     text-align: center;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    background: #E5E7EB;
+    padding: 100px 300px;   
+    gap: 50px;
+    font-size: 36px;
+    color: #1F2937; 
+}
+
+.quote-text {
+    font-style: italic;gi
+    font: Helvetica, Arial, sans-serif;   
+}
+
+
+.quote-sign {
+    display: flex;
+    font-weight: 900;
+    align-self: flex-end;
 }
