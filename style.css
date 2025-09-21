@@ -75,12 +75,6 @@ button.sign1 {
     background: #3882F6;
 }
 
-button.sign2 {
-    border-color: #eee;
-    background: #3882F6;
-    border: 1px solid white;
-}
-
 .info {
     display: flex;
     flex-direction: column;
@@ -128,6 +122,7 @@ button.sign2 {
 
 .quote {
     display: flex;
+    flex-shrink: 0;
     flex-direction: column;
     justify-content: stretch;
     align-items: center;
@@ -139,8 +134,8 @@ button.sign2 {
 }
 
 .quote-text {
-    font-style: italic;gi
-    font: Helvetica, Arial, sans-serif;   
+    font-style: italic;
+    font-family: Helvetica, Arial, sans-serif;   
 }
 
 
@@ -148,4 +143,41 @@ button.sign2 {
     display: flex;
     font-weight: 900;
     align-self: flex-end;
+}
+
+.call {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 200px;   
+    gap: 50px;
+}
+
+.call-container {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: #3882F6;
+    border-style: solid;
+    border-radius: 8px;
+    padding: 50px 100px;  
+}
+
+.call-title {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.call-text {
+    color: #E5E7EB;
+}
+
+button.sign2 {
+    border-color: #eee;
+    background: #3882F6;
+    border: 1px solid white;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
