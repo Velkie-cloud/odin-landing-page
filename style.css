@@ -47,7 +47,7 @@ ul {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 15%;
+    gap: 5%;
 }
 
 .hero-title {
@@ -87,16 +87,17 @@ button.sign1 {
 .info {
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: flex-start;
     align-items: center;
     background: whitesmoke;
-    padding: 100px 300px;   
-    gap: 50px;
-    /* box-sizing: border-box; */
+    padding: 50px 300px 100px 300px;   
+    gap: 25px;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .info-header {
-    display: flex;
+    padding-bottom: 25px;
     justify-content: center;
     align-items: center;
     font-size: 36px;
@@ -105,31 +106,38 @@ button.sign1 {
 }
 
 .info-display {
+    flex: 1;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    max-width: 800px; 
+    gap: 50px;    
 }
 
 .info-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex: 1 1 450px;
+    max-width: 450px;
+    height: auto;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 18px;
 } 
 
-.info-image {
-    width: 200px;
-    flex: 1;
+.info-group > img {
+    width: 100%;
+    min-width: 120px;
+    height: auto;
     border-radius: 8px;
     border: 1px solid #3882F6;
 }
 
 .info-text {
+    flex: 1 1 auto;
     color: #1F2937;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .quote {
