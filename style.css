@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 html, body {
-    height: 100%;
-    box-sizing: border-box;
+    width: 100%;
 }
 
 body {
     font-family: Roboto, sans-serif;
-    margin: 0;
+    margin: 0; /* remove browser default */
+    padding: 0; /* remove browser default */
     background: #1F2937;
     color: #eee;
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
-    /* justify-content: stretch; */
 }
 
 .header {
@@ -40,14 +38,16 @@ ul {
     padding: 5px 128px;
     margin: 100px 48px;
     gap: 10%;
+    box-sizing: border-box;
 }
 
 .hero-left {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 5%;
+    gap: 15%;
 }
 
 .hero-title {
@@ -60,7 +60,15 @@ ul {
 }
 
 .hero-img {
-    height: 400px;
+    display: flex;
+    align-items: center; /* stretch is default, done to prevent distortion */
+    flex: 1;
+}
+
+.hero-img > img {
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
 }
 
 button {
@@ -71,6 +79,7 @@ button {
 }
 
 button.sign1 {
+    margin-top: 10px; /* maintain space between text&button when resizing window */
     border: none;
     background: #3882F6;
 }
@@ -83,6 +92,7 @@ button.sign1 {
     background: whitesmoke;
     padding: 100px 300px;   
     gap: 50px;
+    /* box-sizing: border-box; */
 }
 
 .info-header {
