@@ -139,7 +139,6 @@ button.sign1 {
     flex: 1 1 auto;
     color: #1F2937;
     text-align: center;
-    /* box-sizing: border-box; */
 }
 
 .quote {
@@ -165,7 +164,6 @@ button.sign1 {
 
 .quote-sign {
     flex: 1;
-    min-height: 50px;
     width: auto;
     align-self: flex-end;
     font-weight: 900;
@@ -197,7 +195,6 @@ button.sign1 {
 .call-left {
     display: flex;
     flex-direction: column;
-    /* margin-right: 1%; */
     padding-right: 200px;
     gap: 5px;
 }
@@ -217,12 +214,10 @@ button.sign1 {
 .call-right {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 button.sign2 {
-    justify-content: center;
-    flex: 0 0 auto;
     border-color: #eee;
     background: #3882F6;
     border: 1px solid white;
@@ -233,7 +228,7 @@ button.sign2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px; /* add to retain height*/
+    height: 50px; /* add to retain height */
     padding: 1% 10%; /* add to prevent text wrap when resize*/  
     gap: 50px;
     text-align: center;    
