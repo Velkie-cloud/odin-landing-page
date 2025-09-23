@@ -38,7 +38,7 @@ ul {
     padding: 5px 128px;
     margin: 100px 48px;
     gap: 10%;
-    box-sizing: border-box;
+    box-sizing: border-box; /* add */
 }
 
 .hero-left {
@@ -76,6 +76,9 @@ button {
     padding: 8px 32px;
     border-radius: 8px;
     color: white;
+    width: 130px;
+    height: 36px;
+    box-sizing: border-box;
 }
 
 button.sign1 {
@@ -87,13 +90,13 @@ button.sign1 {
 .info {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background: whitesmoke;
     padding: 50px 300px 100px 300px;   
     gap: 25px;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* add */
 }
 
 .info-header {
@@ -106,8 +109,6 @@ button.sign1 {
 }
 
 .info-display {
-    flex: 1;
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,17 +118,18 @@ button.sign1 {
 .info-group {
     display: flex;
     flex: 1 1 450px;
-    max-width: 450px;
+    max-width: 450px; /* add max width for img container */
     height: auto;
-    flex-direction: column;
+    flex-direction: column; /* use column to avoid wrap and avoid resize issues*/
     align-items: center;
     justify-content: center;
     gap: 18px;
 } 
 
+/* remove img class */
 .info-group > img {
-    width: 100%;
-    min-width: 120px;
+    width: 100%; /* change this to make img interactive */
+    min-width: 120px; /* set min width */
     height: auto;
     border-radius: 8px;
     border: 1px solid #3882F6;
@@ -137,14 +139,14 @@ button.sign1 {
     flex: 1 1 auto;
     color: #1F2937;
     text-align: center;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .quote {
     display: flex;
     flex-shrink: 0;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: center;
     align-items: center;
     background: #E5E7EB;
     padding: 100px 300px;   
@@ -154,15 +156,21 @@ button.sign1 {
 }
 
 .quote-text {
+    flex: 2;
+    justify-content: flex-start;
     font-style: italic;
     font-family: Helvetica, Arial, sans-serif;   
 }
 
 
 .quote-sign {
-    display: flex;
-    font-weight: 900;
+    flex: 1;
+    min-height: 50px;
+    width: auto;
     align-self: flex-end;
+    font-weight: 900;
+    padding-left: 50px;
+    text-align: right;
 }
 
 .call {
@@ -171,42 +179,62 @@ button.sign1 {
     justify-content: center;
     align-items: center;
     padding: 100px 200px;   
-    gap: 50px;
 }
 
 .call-container {
     display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
-    flex-shrink: 0;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
     background-color: #3882F6;
     border-style: solid;
     border-radius: 8px;
-    padding: 50px 100px;  
+    padding: 50px 100px; 
+    gap: 15px;
+}
+
+.call-left {
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 1%; */
+    padding-right: 200px;
+    gap: 5px;
 }
 
 .call-title {
+    flex: 1;
+    width: 100%;
     font-size: 28px;
     font-weight: bolder;
 }
 
 .call-text {
+    flex: 1;
     color: #E5E7EB;
 }
 
+.call-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 button.sign2 {
+    justify-content: center;
+    flex: 0 0 auto;
     border-color: #eee;
     background: #3882F6;
     border: 1px solid white;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    box-sizing: border-box;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 300px;   
+    height: 50px; /* add to retain height*/
+    padding: 1% 10%; /* add to prevent text wrap when resize*/  
     gap: 50px;
     text-align: center;    
 }
